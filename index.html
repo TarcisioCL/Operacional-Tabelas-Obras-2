@@ -11,7 +11,7 @@
 
     <body>
         
-        <header id="header" class="header">
+        <header id="header">
 
             <div class="header-menu">
                 <button id="header_btn"><i class="fa-solid fa-bars"></i></button>
@@ -24,7 +24,7 @@
 
         </header>
 
-        <aside id="sidebar" class="sidebar hidden-sidebar">
+        <aside id="sidebar">
             <nav class="sidebar-nav">
                 <h2>Obras</h2>
                 <ul>
@@ -34,99 +34,99 @@
             </nav>
         </aside>
 
-        <main id="main" class="main">
+        <main>
+            <div class="table-container">
+                <table id="table_execucao">
+                    <caption>Obras em Execução</caption>
+                    <thead>
+                        <tr>
+                            <th >Area</th>
+                            <th >Setor</th>
+                            <th >Execução</th>
+                            <th >Obra</th>
+                            <th >Estado</th>   
+                            <th >Inicio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Area">F2</td>
+                            <td data-label="Setor">Obras</td>
+                            <td data-label="Execução">Fausto</td>
+                            <td data-label="Obra">Casa Gerador</td>
+                            <td data-label="Estado">Em Execução</td>   
+                            <td data-label="Inicio">15/5/2024</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Area">ALUZ</td>
+                            <td data-label="Setor">Aguas</td>
+                            <td data-label="Execução">Lucio</td>
+                            <td data-label="Obra">Barragem Represa</td>
+                            <td data-label="Estado">Em Execução</td>   
+                            <td data-label="Inicio">25/8/2024</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Area">NCS</td>
+                            <td data-label="Setor">Energia</td>
+                            <td data-label="Execução">Jose Ricardo</td>
+                            <td data-label="Obra">Casa Gerador</td>
+                            <td data-label="Estado">Em Execução</td>   
+                            <td data-label="Inicio">25/7/2024</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <table class="main-tabela" id="tabela_execucao">
-                <caption>Obras em Execução</caption>
-                <thead>
-                    <tr>
-                        <th >Area</th>
-                        <th >Setor</th>
-                        <th >Execução</th>
-                        <th >Obra</th>
-                        <th >Estado</th>   
-                        <th >Inicio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Area">F2</td>
-                        <td data-label="Setor">Obras</td>
-                        <td data-label="Execução">Fausto</td>
-                        <td data-label="Obra">Casa Gerador</td>
-                        <td data-label="Estado">Em Execução</td>   
-                        <td data-label="Inicio">15/5/2024</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Area">ALUZ</td>
-                        <td data-label="Setor">Aguas</td>
-                        <td data-label="Execução">Lucio</td>
-                        <td data-label="Obra">Barragem Represa</td>
-                        <td data-label="Estado">Em Execução</td>   
-                        <td data-label="Inicio">25/8/2024</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Area">NCS</td>
-                        <td data-label="Setor">Energia</td>
-                        <td data-label="Execução">Jose Ricardo</td>
-                        <td data-label="Obra">Casa Gerador</td>
-                        <td data-label="Estado">Em Execução</td>   
-                        <td data-label="Inicio">25/7/2024</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <table class="main-tabela" id="tabela_confirmadas">
-                <caption>Obras Confirmadas para execução</caption>
-                <thead>
-                    <tr>
-                        <th >Area</th>
-                        <th >Setor</th>
-                        <th >Execução</th>
-                        <th >Obra</th>
-                        <th >Estado</th>   
-                        <th >Inicio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Area">NCS</td>
-                        <td data-label="Setor">Energia</td>
-                        <td data-label="Execução">Lucio</td>
-                        <td data-label="Obra">Gerador Solar</td>
-                        <td data-label="Estado">Confirmada</td>   
-                        <td data-label="Inicio">15/12/2024</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Area">AM</td>
-                        <td data-label="Setor">Energia</td>
-                        <td data-label="Execução">Lucio</td>
-                        <td data-label="Obra">Gerador Solar</td>
-                        <td data-label="Estado">Confirmada</td>   
-                        <td data-label="Inicio">5/12/2024</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Area">AM</td>
-                        <td data-label="Setor">Energia</td>
-                        <td data-label="Execução">Lucio</td>
-                        <td data-label="Obra">Gerador Solar</td>
-                        <td data-label="Estado">Confirmada</td>   
-                        <td data-label="Inicio">5/12/2024</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Area">AM</td>
-                        <td data-label="Setor">Energia</td>
-                        <td data-label="Execução">Lucio</td>
-                        <td data-label="Obra">Gerador Solar</td>
-                        <td data-label="Estado">Confirmada</td>   
-                        <td data-label="Inicio">5/12/2024</td>
-                    </tr>
-                </tbody>
-            </table>
-
+                <table id="table_confirmadas">
+                    <caption>Obras Confirmadas para execução</caption>
+                    <thead>
+                        <tr>
+                            <th >Area</th>
+                            <th >Setor</th>
+                            <th >Execução</th>
+                            <th >Obra</th>
+                            <th >Estado</th>   
+                            <th >Inicio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Area">NCS</td>
+                            <td data-label="Setor">Energia</td>
+                            <td data-label="Execução">Lucio</td>
+                            <td data-label="Obra">Gerador Solar</td>
+                            <td data-label="Estado">Confirmada</td>   
+                            <td data-label="Inicio">15/12/2024</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Area">AM</td>
+                            <td data-label="Setor">Energia</td>
+                            <td data-label="Execução">Lucio</td>
+                            <td data-label="Obra">Gerador Solar</td>
+                            <td data-label="Estado">Confirmada</td>   
+                            <td data-label="Inicio">5/12/2024</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Area">F2</td>
+                            <td data-label="Setor">Agua</td>
+                            <td data-label="Execução">Lucio</td>
+                            <td data-label="Obra">Nova estação</td>
+                            <td data-label="Estado">Confirmada</td>   
+                            <td data-label="Inicio">9/12/2024</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Area">AM</td>
+                            <td data-label="Setor">esgoto</td>
+                            <td data-label="Execução">Fausto</td>
+                            <td data-label="Obra">Nova ETE 20m3</td>
+                            <td data-label="Estado">Confirmada</td>   
+                            <td data-label="Inicio">25/12/2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
 
-        <form id="form" class="form hidden-form">
+        <form id="form">
             <div class="form-box">
 
                 <div class="form-header">
@@ -195,7 +195,7 @@
             </div>
         </form>
 
-        <footer id="footer" class="footer">
+        <footer id="footer">
             <p class="footer-titulo">Comunidade-Luz Figueira</p>
         </footer>
 

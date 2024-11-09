@@ -1,5 +1,5 @@
-const tabelaExecucao = document.getElementById('tabela_execucao');
-const tabelaConfirmadas = document.getElementById('tabela_confirmadas');
+const tabelaExecucao = document.getElementById('table_execucao');
+const tabelaConfirmadas = document.getElementById('table_confirmadas');
 
 document.getElementById('execucao').addEventListener('click', function () {
   tabelaExecucao.style.display = "block";
@@ -34,3 +34,4 @@ function updateLayout() {
     document.body.classList.remove('body-both-visible');
   }
 }
+
